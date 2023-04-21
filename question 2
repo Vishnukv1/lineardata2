@@ -1,0 +1,25 @@
+#question 2
+def reverse_array(arr):
+    """
+    Reverses an array in place.
+    """
+    # get the length of the array
+    n = len(arr)
+
+    # iterate through the first half of the array
+    for i in range(n // 2):
+        # swap the elements at indices i and n-i-1
+        arr[i], arr[n-i-1] = arr[n-i-1], arr[i]
+
+    return arr
+# create an array
+my_array = [1, 2, 3, 4, 5]
+
+# print the original array
+print(my_array)
+
+# reverse the array in place
+reverse_array(my_array)
+
+# print the reversed array
+print(my_array)
